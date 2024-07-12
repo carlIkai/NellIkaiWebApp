@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*   ----- Variables  -----  */
+:root {
+    --deepBlue: rgb(58, 120, 124);
+    --darkNavyBlue: rgb(47, 85, 89);
+    --mediumNavyBlue: rgba(84, 151, 158, 0.6);
+    --lightBlue: rgba(255, 255, 255, 0.6);
+    --tan: rgb(166, 151, 106);
+    --darkGrey: rgb(217, 200, 180);
+    --lightGreyHiTrans: rgb(253, 251, 251);
+    --darkGreyMedTrans: rgba(217, 200, 180, 0.6);
+    --darkGreyLowTrans: rgba(217, 200, 180, 0.8);
+    --darkGreyHiTrans: rgba(242, 232, 223, 0.4);
+    --lightGreyMedTrans: rgba(242, 232, 223, 0.6);
+    --lightGreyLowTrans: rgba(242, 232, 223, 0.8);
+    --backgroundColor: rgb(221, 240, 248);
+    --lightBlueOpaque: rgb rgb(255, 255, 255);
+    --lightBlueOpaquee: rgb rgba(214, 28, 189, 0);
+}
+
+body {
+    background-color: var(--backgroundColor);
+    background-image: ;
+    background-size: ;
+    background-attachment: ;
+    background-position: ;
+    background-repeat: ;
+    color: var(--darkNavyBlue);
+    font-family: "Raleway", sans-serif;
+    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10%;
+    max-width: 1200px;
+    min-width: 400px;
+}
+
+header {
+    background-color: var(--lightBlue);
+    padding: 1% 1% 1% 1%;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid var(--deepBlue);
+
+}
+
+main {
+    background-color: var(--lightBlue);
+    padding: 4% 2% 2% 2%;
+    margin: 0;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid var(--deepBlue);
+}
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {
+    float: right;
+    width: 300px;
+    border: 1px solid var(--lightBlue);
+    border-radius: 5px;
+    margin: 2%;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--lightBlue);
+    padding: .5% .5%.5% .5%;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border: 1px solid var(--deepBlue);
+
+}
+
+nav {
+    background-color: var(--lightBlue);
+    border: 1px solid var(--deepBlue);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+nav a {
+    background-color: var(--lightBlueOpaque);
+    border: 1px solid var(--deepBlue);
+    border-radius: 5px;
+    color: var(--darkNavyBlue);
+    font-size: .5;
+    font-weight: normal;
+    margin: 3px;
+    padding: 1px 5px 1px 5px;
+    text-decoration: none;
+
+
+}
+
+nav a:hover {
+    background-color: var(--mediumNavyBlue);
+    color: var(--lightNavyBlue);
+}
+
+table {
+    background-color: var(--lightBlue);
+    border: 1px solid var(--deepBlue);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 5px;
+}
+
+fieldset {
+    background-color: var(--lightGrey);
+    border: 2px solid var(--darkNavyBlue);
+    border-radius: 5px;
+    padding: 2%;
+    margin: 5px;
+}
+
+legend {
+
+    color: var(--deepBlue);
+    font-size: 140%;
+    font-weight: bold;
+
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 120%;
+    color: var(--deepBlue);
+}
+
+input {
+    font-size: 105%;
+    padding: 4px;
+    font-family: inherit;
+    border: 1px solid var(--darkNavyBlue);
+    border-radius: 5px;
+
+}
+
+select {
+    font-size: 105%;
+    padding: 4px;
+    font-family: inherit;
+}
+
+textarea {
+    font-size: 105%;
+    padding: 4px;
+    font-family: inherit;
+    height: 200px;
+    width: 98.5%;
+    border: 1px solid var(--darkNavyBlue);
+    border-radius: 5px;
+}
+
+button {
+    border: 2px solid var(--deepBlue);
+    background-color: var(--lightBlueOpaque);
+    color: var(--deepBlue);
+    font-size: 120%;
+    padding: 2px;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button:hover {
+    color: var(--deepBlue);
+    background-color: var(--lightGreyHiTrans);
+    border: 2px solid var(--darkNavyBlue);
+}
+
+.timesTable {
+    max-width: 1200px;
+    min-width: 100px;
+}
+.local {
+    background-color: var(--lightBlueOpaque);
+    border: 2px solid var(--deepBlue);
+    border-radius: 5px;
+    margin-right: 3px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+}

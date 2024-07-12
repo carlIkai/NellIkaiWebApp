@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<header>
+    <h1>
+        <!-- <img src="android-chrome-80x80.png" alt="Nell Ikai" /> -->
+        Contact
+    </h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="clinic.html">Clinic</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+    <section>
+
+        <h2>Contact</h2>
+        <article>
+
+            <form action="/present" method="POST">
+
+                <fieldset>
+
+                    <legend>Contact Information</legend>
+
+                    <p><label class="required" for="firstLast">First and Last Name
+                            <input type="text" name="firstLast" id="firstLast" size="30" maxlength="100" required
+                                placeholder="First and last name" autofocus />
+                        </label>
+                    </p>
+
+                    <p>
+                        <label class="required" for="email">Email
+                            <input type="email" name="email" id="email" size="30" maxlength="100" required
+                                pattern="[^ @]+@[^ @]+.[a-z]+" placeholder="name@host.com" />
+                        </label>
+                    </p>
+
+                    <p><label class="required" for="comments">What else would you like to tell us?</label>
+                        <textarea name="comments" id="comments" minlenth="3" maxlenth="250" required
+                            placeholder="Write 250 characters or less."></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Desired Availability & Care</legend>
+
+                    <p><b>What Days Would You Like To Meet?</b>
+                        <label for="monday">
+                            <input type="radio" name="day" id="monday" value="Monday">
+                            Monday
+                        </label>
+                        <label for="tuesday">
+                            <input type="radio" name="day" id="tuesday" value="Tuesday">
+                            Tuesday
+                        </label>
+                        <label for="wednesday">
+                            <input type="radio" name="day" id="wednesday" value="Wednesday">
+                            Wednesday
+                        </label>
+                        <label for="thusday">
+                            <input type="radio" name="day" id="thusday" value="Thusday">
+                            Thursday
+                        </label>
+                        <label for="friday">
+                            <input type="radio" name="day" id="friday" value="Friday">
+                            Friday
+                        </label>
+                        <label for="saturday">
+                            <input type="radio" name="day" id="saturday" value="Saturday">
+                            Saturday
+                        </label>
+                        <label for="sunday">
+                            <input type="radio" name="day" id="sunday" value="Sunday">
+                            Sunday
+                        </label>
+                    </p>
+                    <table class="timesTable">
+                        <tbody>
+                            <tr>
+                            <td>    
+                            <p>
+                                <label for="eightAm">
+                                    <input type="checkbox" name="hour" id="eightAm" value="EightAm" />
+                                    8:00 AM</label>
+                            </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <label for="twoPm">
+                                        <input type="checkbox" name="hour" id="twoPm" value="TwoPm" />
+                                        2:00 PM</label>
+                                </p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <label for="nineAm">
+                                            <input type="checkbox" name="hour" id="nineAm" value="NineAm" />
+                                            9:00 AM</label>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <label for="threePm">
+                                            <input type="checkbox" name="hour" id="threePm" value="ThreePm" />
+                                            3:00 PM</label>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <label for="tenAm">
+                                            <input type="checkbox" name="hour" id="tenAm" value="TenAm" />
+                                            10:00 AM</label>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <label for="fourPm">
+                                            <input type="checkbox" name="hour" id="fourPm" value="FourPm" />
+                                            4:00 PM</label>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <label for="elevenAm">
+                                            <input type="checkbox" name="hour" id="elevenAm" value="ElevenAm" />
+                                            11:00 AM</label>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <label for="fivePm">
+                                            <input type="checkbox" name="hour" id="fivePm" value="FivePm" />
+                                            5:00 PM</label>
+                                    </p>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <p>
+                                        <label for="twelevePm">
+                                            <input type="checkbox" name="hour" id="twelevePm" value="TwelevePm" />
+                                            12:00 PM</label>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <label for="sixPm">
+                                            <input type="checkbox" name="hour" id="sixPm" value="SixPm" />
+                                            6:00 PM</label>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <label for="onePm">
+                                            <input type="checkbox" name="hour" id="onePm" value="OnePm" />
+                                            1:00 PM</label>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <label for="sevenPm">
+                                            <input type="checkbox" name="hour" id="sevenPm" value="SevenPm" />
+                                            7:00 PM</label>
+                                    </p>
+                                </td>
+                            </tr>
+                        <!-- <p>
+                            <label for="nineAm">
+                                <input type="checkbox" name="hour" id="nineAm" value="NineAm" />
+                                9:00 AM</label>
+                        </p>
+                        <p>
+                            <label for="tenAm">
+                                <input type="checkbox" name="hour" id="tenAm" value="TenAm" />
+                                10:00 AM</label>
+                        </p>
+                        <p>
+                            <label for="elevenAm">
+                                <input type="checkbox" name="hour" id="elevenAm" value="ElevenAm" />
+                                11:00 AM</label>
+                        </p>
+                        <p>
+                            <label for="twelevePm">
+                                <input type="checkbox" name="hour" id="twelevePm" value="TwelevePm" />
+                                12:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="onePm">
+                                <input type="checkbox" name="hour" id="onePm" value="OnePm" />
+                                1:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="twoPm">
+                                <input type="checkbox" name="hour" id="twoPm" value="TwoPm" />
+                                2:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="threePm">
+                                <input type="checkbox" name="hour" id="threePm" value="ThreePm" />
+                                3:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="fourPm">
+                                <input type="checkbox" name="hour" id="fourPm" value="FourPm" />
+                                4:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="fivePm">
+                                <input type="checkbox" name="hour" id="fivePm" value="FivePm" />
+                                5:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="sixPm">
+                                <input type="checkbox" name="hour" id="sixPm" value="SixPm" />
+                                6:00 PM</label>
+                        </p>
+                        <p>
+                            <label for="sevenPm">
+                                <input type="checkbox" name="hour" id="sevenPm" value="SevenPm" />
+                                7:00 PM</label>
+                        </p> -->
+                        </tbody>
+                    </table>
+
+                    <label for="treatment">What are you seeking treatment for?</label>
+                    <select name="treatment" id="treatment">
+                        <option value="Trauma">Trauma</option>
+                        <option value="Alcohol use disorder & addiction">Alcohol use disorder & addiction</option>
+                        <option value="Anxiety">Anxiety</option>
+                        <option value="Communication issues" selected>Communication issues</option>
+                        <option value="Substance abuse">Substance abuse</option>
+                        <option value="Social anxiety">Social anxiety</option>
+                        <option value="Depression">Depression</option>
+                        <option value="Self-esteem" selected>Self-esteem</option>
+                        <option value="Panic attacks / panic disorder" selected>Panic attacks / panic disorder</option>
+                        <option value="Loss, grief, and bereavement">Loss, grief, and bereavement</option>
+                        <option value="Post-traumatic Stress Disorder (PTSD)">Post-traumatic Stress Disorder (PTSD)</option>
+                        <option value="Suicidal ideation">Suicidal ideation</option>
+                        <option value="Chronic illness">Chronic illness</option>
+                        <option value="Emotion regulation" selected>Emotion regulation</option>
+                        <option value="Psychotic disorders">Psychotic disorders</option>
+                        <option value="Veterans' issues" selected>Veterans' issues</option>
+                        <option value="College & graduate student mental health">College & graduate student mental health</option>
+                        <option value="Life transitions">Life transitions</option>  
+                    </select>
+
+                    <p>
+                        <label for="individual">
+                            <input type="checkbox" name="engagement" id="individual" value="individual" />
+                            Individual Counseling?</label>
+                    </p>
+                    <p>
+                        <label for="couples">
+                            <input type="checkbox" name="engagement" id="couples" value="couples" />
+                            Couples Counseling?</label>
+                    </p>
+                    <p>
+                        <label for="family">
+                            <input type="checkbox" name="engagement" id="family" value="family" />
+                            Family Counseling?</label>
+                    </p>
+                    <p>
+                        <label for="adolescent">
+                            <input type="checkbox" name="engagement" id="adolescent" value="adolescent" />
+                            Adolescent Counseling?</label>
+                    </p>
+
+                    <label for="submit">
+                    <button type="submit" id="submit" name="present">Submit Form</button>
+                    </label>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+</main>
+
+<body>
+    
+</body>
+</html>
