@@ -16,7 +16,6 @@
     --lightGreyLowTrans: rgba(242, 232, 223, 0.8);
     --backgroundColor: rgb(221, 240, 248);
     --lightBlueOpaque: rgb rgb(255, 255, 255);
-    --lightBlueOpaquee: rgb rgba(214, 28, 189, 0);
     --navBlue: rgb(255, 255, 255);
 }
 
@@ -186,6 +185,8 @@ button:hover {
 .timesTable {
     max-width: 1200px;
     min-width: 100px;
+    width: 340px;
+    margin-left: auto;
 }
 
 .local {
@@ -199,4 +200,77 @@ button:hover {
     top: 0;
     display: flex;
     flex-flow: row wrap;
+}
+
+.daysSchedule {
+    float: left;
+}
+
+.providersSection {
+    position: fixed;
+}
+.nellOne {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.ingaHeadShot {
+    width: 20%;
+    margin: -5px 10px 0px 5px;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.inga {
+   
+}
+
+.nellHeadShotTwo {
+    width: 25%;
+    margin: 0px 10px 0px 10px;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.jackHeadShot {
+    width: 30%;
+    margin: 0px 10px 0px 10px;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.roselineHeadShot {
+    width: 30%;
+    margin: 0px 10px 0px 10px;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.officeShot {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.pageHeading {
+    text-align: center;
+    font-size: 250%;
+}
+
+.providers {
+    font-size: 200%;
 }
