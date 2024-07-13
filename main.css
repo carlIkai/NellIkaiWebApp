@@ -17,6 +17,7 @@
     --backgroundColor: rgb(221, 240, 248);
     --lightBlueOpaque: rgb rgb(255, 255, 255);
     --lightBlueOpaquee: rgb rgba(214, 28, 189, 0);
+    --navBlue: rgb(255, 255, 255);
 }
 
 body {
@@ -82,7 +83,7 @@ footer {
 }
 
 nav {
-    background-color: var(--lightBlue);
+    background-color: var(--navBlue);
     border: 1px solid var(--deepBlue);
     border-radius: 5px;
     padding: 1%;
@@ -92,7 +93,7 @@ nav {
 }
 
 nav a {
-    background-color: var(--lightBlueOpaque);
+    background-color: var(--navBlue);
     border: 1px solid var(--deepBlue);
     border-radius: 5px;
     color: var(--darkNavyBlue);
@@ -186,8 +187,9 @@ button:hover {
     max-width: 1200px;
     min-width: 100px;
 }
+
 .local {
-    background-color: var(--lightBlueOpaque);
+    background-color: var(--navBlue);
     border: 2px solid var(--deepBlue);
     border-radius: 5px;
     margin-right: 3px;
