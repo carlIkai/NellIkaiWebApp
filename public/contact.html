@@ -27,7 +27,7 @@
         <h2 class="pageHeading">Contact</h2>
         <article>
             <p id="subMessage"></p>
-            <form action="/present" id="contactForm">
+            <form action="/present" id="contactForm" method="POST">
 
                 <fieldset>
 
@@ -91,14 +91,14 @@
                             <td>    
                             <p>
                                 <label for="eightAm">
-                                    <input type="checkbox" name="hour" id="eightAm" value="EightAm" />
+                                    <input type="checkbox" name="hour" id="eightAm" value="8:00 AM" />
                                     8:00 AM</label>
                             </p>
                             </td>
                             <td>
                                 <p>
                                     <label for="twoPm">
-                                        <input type="checkbox" name="hour" id="twoPm" value="TwoPm" />
+                                        <input type="checkbox" name="hour" id="twoPm" value="2:00 PM" />
                                         2:00 PM</label>
                                 </p>
                             </td>
@@ -107,14 +107,14 @@
                                 <td>
                                     <p>
                                         <label for="nineAm">
-                                            <input type="checkbox" name="hour" id="nineAm" value="NineAm" />
+                                            <input type="checkbox" name="hour" id="nineAm" value="9:00 AM" />
                                             9:00 AM</label>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <label for="threePm">
-                                            <input type="checkbox" name="hour" id="threePm" value="ThreePm" />
+                                            <input type="checkbox" name="hour" id="threePm" value="3:00 PM" />
                                             3:00 PM</label>
                                     </p>
                                 </td>
@@ -123,14 +123,14 @@
                                 <td>
                                     <p>
                                         <label for="tenAm">
-                                            <input type="checkbox" name="hour" id="tenAm" value="TenAm" />
+                                            <input type="checkbox" name="hour" id="tenAm" value="10:00 AM" />
                                             10:00 AM</label>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <label for="fourPm">
-                                            <input type="checkbox" name="hour" id="fourPm" value="FourPm" />
+                                            <input type="checkbox" name="hour" id="fourPm" value="4:00 PM" />
                                             4:00 PM</label>
                                     </p>
                                 </td>
@@ -139,14 +139,14 @@
                                 <td>
                                     <p>
                                         <label for="elevenAm">
-                                            <input type="checkbox" name="hour" id="elevenAm" value="ElevenAm" />
+                                            <input type="checkbox" name="hour" id="elevenAm" value="11:00 AM" />
                                             11:00 AM</label>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <label for="fivePm">
-                                            <input type="checkbox" name="hour" id="fivePm" value="FivePm" />
+                                            <input type="checkbox" name="hour" id="fivePm" value="5:00 PM" />
                                             5:00 PM</label>
                                     </p>
                                 </td>
@@ -155,14 +155,14 @@
                                 <td>
                                     <p>
                                         <label for="twelevePm">
-                                            <input type="checkbox" name="hour" id="twelevePm" value="TwelevePm" />
+                                            <input type="checkbox" name="hour" id="twelevePm" value="12:00 PM" />
                                             12:00 PM</label>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <label for="sixPm">
-                                            <input type="checkbox" name="hour" id="sixPm" value="SixPm" />
+                                            <input type="checkbox" name="hour" id="sixPm" value="6:00 PM" />
                                             6:00 PM</label>
                                     </p>
                                 </td>
@@ -171,14 +171,14 @@
                                 <td>
                                     <p>
                                         <label for="onePm">
-                                            <input type="checkbox" name="hour" id="onePm" value="OnePm" />
+                                            <input type="checkbox" name="hour" id="onePm" value="1:00 PM" />
                                             1:00 PM</label>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <label for="sevenPm">
-                                            <input type="checkbox" name="hour" id="sevenPm" value="SevenPm" />
+                                            <input type="checkbox" name="hour" id="sevenPm" value="7:00 PM" />
                                             7:00 PM</label>
                                     </p>
                                 </td>
@@ -246,21 +246,22 @@
                         <option value="Trauma">Trauma</option>
                         <option value="Alcohol use disorder & addiction">Alcohol use disorder & addiction</option>
                         <option value="Anxiety">Anxiety</option>
-                        <option value="Communication issues" selected>Communication issues</option>
+                        <option value="Communication issues">Communication issues</option>
                         <option value="Substance abuse">Substance abuse</option>
                         <option value="Social anxiety">Social anxiety</option>
                         <option value="Depression">Depression</option>
-                        <option value="Self-esteem" selected>Self-esteem</option>
-                        <option value="Panic attacks / panic disorder" selected>Panic attacks / panic disorder</option>
+                        <option value="Self-esteem">Self-esteem</option>
+                        <option value="Panic attacks / panic disorder">Panic attacks / panic disorder</option>
                         <option value="Loss, grief, and bereavement">Loss, grief, and bereavement</option>
                         <option value="Post-traumatic Stress Disorder (PTSD)">Post-traumatic Stress Disorder (PTSD)</option>
                         <option value="Suicidal ideation">Suicidal ideation</option>
                         <option value="Chronic illness">Chronic illness</option>
-                        <option value="Emotion regulation" selected>Emotion regulation</option>
+                        <option value="Emotion regulation">Emotion regulation</option>
                         <option value="Psychotic disorders">Psychotic disorders</option>
-                        <option value="Veterans' issues" selected>Veterans' issues</option>
+                        <option value="Veterans' issues">Veterans' issues</option>
                         <option value="College & graduate student mental health">College & graduate student mental health</option>
-                        <option value="Life transitions">Life transitions</option>  
+                        <option value="Life transitions">Life transitions</option> 
+                        <option value="Other" selected>Other</option> 
                     </select>
 
                     <p>
