@@ -25,6 +25,9 @@
         <p><%= comment.text %></p>
         <a href="/comments">Back To Message Board</a>
         <a href="/comments/<%= comment.id %>/edit">Edit Comment</a>
+        <form method="POST"action="/comments/<%= comment.id %>?_method=DELETE">
+            <button>Delete</button>
+        </form>
     </main>
 </body>
 </html>

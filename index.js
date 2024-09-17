@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs');
 
 
-const comments = [
+let comments = [
     {
         id: uuid(),
         userName: 'John',
@@ -74,6 +74,12 @@ app.patch('/comments/:id', (req, res) => {
     res.redirect('/comments')
 })
 
+app.delete('/comments/:id', (req, res) => {
+    const { id } = req.params;
+    comments = comments.filter(c => c.id !== id);
+    res.redirect('/comments');
+})
+
 let htmlTop = `
     <!DOCTYPE html>
     <html lang="en">
@@ -104,7 +110,7 @@ let htmlTop = `
 
 let htmlBottom = `
     </main>
-        <footer>
+        <footer> 
             <p>&copy; 2024 Nell Ikai</p>
         </footer>
     </body>
