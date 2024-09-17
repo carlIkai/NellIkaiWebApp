@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <!-- <img src="android-chrome-80x80.png" alt="Nell Ikai" /> -->
+            Nell Ikai
+        </h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="clinic.html">Clinic</a>
+        <a href="contact.html">Contact</a>
+        <a href="/new">Leave A Comment</a>
+        <a href="/comments">Community Message Board</a>
+    </nav>
+    <main>
+    <h1>Leave A Comment</h1>
+    <form action="/comments" method="post">
+        <section>
+            <label for="username">Enter Username:</label>
+                <input type="text" id="username" name="username">
+        </section>        
+        <section>
+            <label for="usercomment">Comment Here</label>
+            <textarea name="usercomment" id="usercomment" minlenth="3" maxlenth="250" required
+                    placeholder="Write 250 characters or less."></textarea>
+        </section> 
+        <button>Submit</button>   
+    </form>
+    </main>
+</body>
+</html>

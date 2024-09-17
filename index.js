@@ -1,21 +1,78 @@
-// const btn = document.querySelector('#submit');
 
-// function submitClientData() {
-//     console.log("it worked");
-// }
-
-
-// btn.addEventListener('click', function submitClientData() {
-//     console.log("it worked");
-// });
 const express = require("express");
 const app = express()
 const PORT = 3000
 const path = require("path")
+const methodOverride = require('method-override')
+const { v4: uuid } = require('uuid');
+uuid();
 
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.json())
+app.use(methodOverride('_method'))
 app.use(express.static(path.join(__dirname, 'public')))
+
+
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs');
+
+
+const comments = [
+    {
+        id: uuid(),
+        userName: 'John',
+        text: 'PTSD is a common diagnosis.'
+    },
+    {
+        id: uuid(),
+        userName: 'Alfonzo',
+        text: 'I like feeling free.'
+    },
+    {
+        id: uuid(),
+        userName: 'Lyra',
+        text: 'I have attachment issues.'
+    },
+    {
+        id: uuid(),
+        userName: 'Screamer',
+        text: 'Don\'t mess with me'
+    }
+]
+
+app.get('/comments', (req, res) => {
+    res.render('comments/index', { comments })
+})
+
+app.get('/new', (req, res) => {
+    res.render('comments/new')
+})
+
+app.post('/comments', (req,res) => {
+    const { username, usercomment } = req.body;
+    comments.push({ userName: username, text: usercomment, id: uuid() })
+    res.redirect('/comments');
+})
+
+app.get('/comments/:id', (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find( c => c.id === id);
+    res.render('comments/show', { comment })
+})
+
+app.get('/comments/:id/edit', (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find( c => c.id === id);
+    res.render('comments/edit', { comment })
+})
+
+app.patch('/comments/:id', (req, res) => {
+    const { id } = req.params;
+    const newCommentText = req.body.text;
+    const foundComment = comments.find( c => c.id === id);
+    foundComment.text =newCommentText;
+    res.redirect('/comments')
+})
 
 let htmlTop = `
     <!DOCTYPE html>
@@ -38,6 +95,8 @@ let htmlTop = `
                 <a href="index.html">Home</a>
                 <a href="clinic.html">Clinic</a>
                 <a href="contact.html">Contact</a>
+                <a href="/new">Leave A Comment</a>
+                <a href="/comments">Community Message Board</a>
             </nav>
 
             <main>
@@ -71,18 +130,6 @@ app.post("/present", (req, res) => {
         </section>
         ${htmlBottom}`);
 })
-
-// app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, '/views'))
-
-// app.get('/', (req, res) => {
-//     res.render('home.ejs')
-// })
-
-// app.get('/r/:phish', (req, res) => {
-//     const { phish } = req.params;
-//     res.render('home', { phish })
-// })
 
 app.use((req, res) => {
     console.log("Request made")

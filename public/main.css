@@ -28,7 +28,7 @@ body {
     background-repeat: ;
     color: var(--darkNavyBlue);
     font-family: "Raleway", sans-serif;
-    margin: 50px;
+    margin: ;
     margin-left: 50px;
     margin-right: 50px;
     padding: 10%;
@@ -160,6 +160,7 @@ textarea {
     font-size: 105%;
     padding: 4px;
     font-family: inherit;
+    text-align: left !important;
     height: 200px;
     width: 98.5%;
     border: 1px solid var(--darkNavyBlue);
@@ -180,6 +181,10 @@ button:hover {
     color: var(--deepBlue);
     background-color: var(--lightGreyHiTrans);
     border: 2px solid var(--darkNavyBlue);
+}
+
+.editTextArea {
+    text-align: left;
 }
 
 .timesTable {
